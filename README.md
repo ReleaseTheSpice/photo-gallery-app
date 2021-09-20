@@ -1,3 +1,3 @@
 # photo-gallery-app
 
-wassup
+hello :)
