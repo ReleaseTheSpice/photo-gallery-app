@@ -20,6 +20,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
@@ -111,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             iv.setImageBitmap(BitmapFactory.decodeFile(path));
             String[] attr = path.split("_");
             et.setText(attr[1]);
-            tv.setText(attr[2]);
+            tv.setText("Date: " + attr[2] + " Time: " + attr[3]);
         }
     }
 
